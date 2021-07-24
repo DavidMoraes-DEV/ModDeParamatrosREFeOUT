@@ -10,10 +10,10 @@ namespace ModificadoresDeParametrosREFeOUT
             Calculadora.Triplicar(ref a); //Para funcionar a função com a palavra ref tem que adicionar a palavra ref na variável que será enviada também.
             Console.WriteLine(a);
 
-            int b = 20; //Variável original que possui o valor para a função.
-            int c; //Variável de Saída, não iniciada que queremos guardar o resultado da função.
-            Calculadora.Triplicar2(b, out c); //Variável "b" que contém o valor que queremos enviar para a operação, e a variável "c" será a variável que receberá o valor resultado a função.
-            Console.WriteLine(c);
+            int origin = 20; //Variável original que possui o valor para a função.
+            int result; //Variável de Saída, não iniciada que queremos guardar o resultado da função.
+            Calculadora.Triplicar2(origin, out result); //Variável "b" que contém o valor que queremos enviar para a operação, e a variável "c" será a variável que receberá o valor resultado da função.
+            Console.WriteLine(result);
 
             /*
              CONSIDERAÇÕES SOBRE "REF" e "OUT":
